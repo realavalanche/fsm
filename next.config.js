@@ -4,6 +4,7 @@ const isProd = process.env.NODE_ENV === 'production'
 const nextConfig = {
   output: 'export',
   basePath: isProd ? '/fsm' : '',
+  assetPrefix: isProd ? '/fsm' : '',
   images: { unoptimized: true },
 }
 
