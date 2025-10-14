@@ -7,6 +7,7 @@ import { Download } from "lucide-react";
 
 const FSMComparison = () => {
   const [activeTab, setActiveTab] = useState("overview");
+  const [isDownloadingPDF, setIsDownloadingPDF] = useState(false);
 
   // Comprehensive comparison data
   const overviewData = [
@@ -615,7 +616,7 @@ const FSMComparison = () => {
       },
       {
         scenario: "Scenario 2: Uptick Interim → D365 (10-11 months)",
-        recommendation: "RECOMMENDED",
+        recommendation: "Recommended",
         reasoning:
           "Best of both worlds - immediate fire compliance + long-term enterprise platform. Uptick (Month 1-4) provides relief, D365 (Month 10-11) provides scale.",
       },
@@ -728,6 +729,44 @@ const FSMComparison = () => {
     URL.revokeObjectURL(url);
   };
 
+  const downloadPDF = async () => {
+    if (isDownloadingPDF) return; // Prevent multiple downloads
+    
+    setIsDownloadingPDF(true);
+    try {
+      const response = await fetch('http://localhost:8000/generate-pdf', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          activeTab: activeTab,
+          timestamp: new Date().toISOString()
+        })
+      });
+      
+      if (response.ok) {
+        const blob = await response.blob();
+        const url = window.URL.createObjectURL(blob);
+        const a = document.createElement('a');
+        a.href = url;
+        a.download = `FSM_Comparison_${new Date().toISOString().split('T')[0]}.pdf`;
+        document.body.appendChild(a);
+        a.click();
+        document.body.removeChild(a);
+        window.URL.revokeObjectURL(url);
+      } else {
+        console.error('Failed to generate PDF:', response.statusText);
+        alert('Failed to generate PDF. Please make sure the PDF service is running at http://localhost:8000');
+      }
+    } catch (error) {
+      console.error('Error generating PDF:', error);
+      alert('Error connecting to PDF service. Please make sure it is running at http://localhost:8000');
+    } finally {
+      setIsDownloadingPDF(false);
+    }
+  };
+
   const CategorySection = ({ category, features }) => (
     <div className="mb-6">
       <div className="bg-blue-900 text-white px-4 py-2 font-bold text-sm">
@@ -797,13 +836,36 @@ const FSMComparison = () => {
                 For Ventro Group - Fire Safety & Compliance Services
               </p>
             </div>
-            <button
-              onClick={downloadCSV}
-              className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg flex items-center gap-2 transition-colors"
-            >
-              <Download size={20} />
-              Download CSV
-            </button>
+            <div className="flex gap-2">
+              <button
+                onClick={downloadCSV}
+                className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg flex items-center gap-2 transition-colors"
+              >
+                <Download size={20} />
+                Download CSV
+              </button>
+              <button
+                onClick={downloadPDF}
+                disabled={isDownloadingPDF}
+                className={`${
+                  isDownloadingPDF 
+                    ? 'bg-red-400 cursor-not-allowed' 
+                    : 'bg-red-600 hover:bg-red-700'
+                } text-white px-6 py-3 rounded-lg flex items-center gap-2 transition-colors`}
+              >
+                {isDownloadingPDF ? (
+                  <>
+                    <div className="animate-spin rounded-full h-5 w-5 border-2 border-white border-t-transparent"></div>
+                    <span>Generating PDF...</span>
+                  </>
+                ) : (
+                  <>
+                    <Download size={20} />
+                    Download PDF
+                  </>
+                )}
+              </button>
+            </div>
           </div>
         </div>
 
@@ -988,7 +1050,7 @@ const FSMComparison = () => {
                       <div className="font-bold mb-1">Strengths:</div>
                       <div>• Middle ground</div>
                       <div>• No clear differentiator</div>
-                      <div>• Not recommended</div>
+                      <div>• Not Recommended</div>
                     </div>
                   </div>
 
@@ -1056,7 +1118,7 @@ const FSMComparison = () => {
                     <div
                       key={idx}
                       className={`border-2 rounded-lg p-6 ${
-                        rec.recommendation === "RECOMMENDED"
+                        rec.recommendation === "Recommended"
                           ? "bg-green-50 border-green-500"
                           : rec.recommendation === "Not Competitive"
                           ? "bg-red-50 border-red-300"
@@ -1069,7 +1131,7 @@ const FSMComparison = () => {
                         </h3>
                         <span
                           className={`px-4 py-1 rounded-full text-sm font-bold ${
-                            rec.recommendation === "RECOMMENDED"
+                            rec.recommendation === "Recommended"
                               ? "bg-green-600 text-white"
                               : rec.recommendation === "Not Competitive"
                               ? "bg-red-600 text-white"
