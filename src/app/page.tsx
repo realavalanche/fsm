@@ -152,8 +152,18 @@ const FSMComparison = () => {
     },
     {
       category: "Mobile App",
+      feature: "Offline capability",
+      uptick: "✓ Excellent - full offline mode",
+      totalMobile: "✓ Good offline support",
+      d365: "✓ Excellent - robust offline",
+      uptickScore: "9/10",
+      tmScore: "8/10",
+      d365Score: "9/10",
+    },
+    {
+      category: "Mobile App",
       feature: "Digital forms/checklists",
-      uptick: "✓ **Fire safety templates built-in**",
+      uptick: "✓ Fire safety templates built-in",
       totalMobile: "✓ Customizable",
       d365: "✓ Highly customizable",
       uptickScore: "10/10",
@@ -203,7 +213,7 @@ const FSMComparison = () => {
     {
       category: "Asset Management",
       feature: "Asset hierarchy (building→equipment)",
-      uptick: "✓ **Excellent** - fire safety focused",
+      uptick: "✓ Excellent - fire safety focused",
       totalMobile: "✓ Standard",
       d365: "✓ Excellent - functional locations",
       uptickScore: "10/10",
@@ -213,7 +223,7 @@ const FSMComparison = () => {
     {
       category: "Asset Management",
       feature: "Service history tracking",
-      uptick: "✓ **Excellent** - compliance focused",
+      uptick: "✓ Excellent - compliance focused",
       totalMobile: "✓ Standard",
       d365: "✓ Excellent",
       uptickScore: "9/10",
@@ -222,10 +232,10 @@ const FSMComparison = () => {
     },
     {
       category: "Asset Management",
-      feature: "**Fire safety compliance**",
-      uptick: "✓ **BUILT-IN** (AS1851, BS5839, BS7273)",
+      feature: "Fire safety compliance",
+      uptick: "✓ BUILT-IN (AS1851, BS5839, BS7273)",
       totalMobile: "✗ Not available",
-      d365: "~ Requires customization",
+      d365: "~ Requires configuration",
       uptickScore: "10/10",
       tmScore: "1/10",
       d365Score: "4/10",
@@ -255,17 +265,17 @@ const FSMComparison = () => {
       feature: "Work order → invoice automation",
       uptick: "~ Basic invoicing",
       totalMobile: "✓ Good",
-      d365: "✓ **EXCELLENT** - native",
+      d365: "✓ EXCELLENT - native",
       uptickScore: "5/10",
       tmScore: "7/10",
       d365Score: "10/10",
     },
     {
       category: "Invoicing & ERP Integration",
-      feature: "**NetSuite integration**",
+      feature: "NetSuite integration",
       uptick: "~ Manual/CSV export",
       totalMobile: "~ Custom API work needed",
-      d365: "✓ **Celigo iPaaS** (pre-built)",
+      d365: "✓ Celigo iPaaS (pre-built)",
       uptickScore: "3/10",
       tmScore: "5/10",
       d365Score: "10/10",
@@ -345,7 +355,7 @@ const FSMComparison = () => {
       feature: "Custom dashboards",
       uptick: "~ Limited customization",
       totalMobile: "✓ Available",
-      d365: "✓ **Power BI integration**",
+      d365: "✓ Power BI integration",
       uptickScore: "5/10",
       tmScore: "7/10",
       d365Score: "10/10",
@@ -372,8 +382,8 @@ const FSMComparison = () => {
     },
     {
       category: "Compliance & Regulatory",
-      feature: "**Fire safety standards (UK)**",
-      uptick: "✓ **BUILT-IN** (BS5839, BS7273)",
+      feature: "Fire safety standards (UK)",
+      uptick: "✓ BUILT-IN (BS5839, BS7273)",
       totalMobile: "✗ Not available",
       d365: "~ Custom configuration needed",
       uptickScore: "10/10",
@@ -383,7 +393,7 @@ const FSMComparison = () => {
     {
       category: "Compliance & Regulatory",
       feature: "Certificate generation",
-      uptick: "✓ **Excellent** - automated",
+      uptick: "✓ Excellent - automated",
       totalMobile: "~ Basic",
       d365: "✓ Good - Power Automate",
       uptickScore: "10/10",
@@ -415,7 +425,7 @@ const FSMComparison = () => {
       feature: "API availability",
       uptick: "~ Limited REST APIs",
       totalMobile: "✓ Good API coverage",
-      d365: "✓ **Extensive** REST APIs",
+      d365: "✓ Extensive REST APIs",
       uptickScore: "5/10",
       tmScore: "7/10",
       d365Score: "10/10",
@@ -425,7 +435,7 @@ const FSMComparison = () => {
       feature: "Low-code customization",
       uptick: "✗ Limited - SaaS only",
       totalMobile: "~ Some configuration",
-      d365: "✓ **Power Platform** (Power Apps, Power Automate)",
+      d365: "✓ Power Platform (Power Apps, Power Automate)",
       uptickScore: "3/10",
       tmScore: "5/10",
       d365Score: "10/10",
@@ -435,7 +445,7 @@ const FSMComparison = () => {
       feature: "Third-party integrations",
       uptick: "~ Limited marketplace",
       totalMobile: "✓ Good",
-      d365: "✓ **Microsoft ecosystem** (365, Azure, Power Platform)",
+      d365: "✓ Microsoft ecosystem (365, Azure, Power Platform)",
       uptickScore: "4/10",
       tmScore: "7/10",
       d365Score: "10/10",
@@ -445,7 +455,7 @@ const FSMComparison = () => {
       feature: "Scalability (users)",
       uptick: "✓ Good for SMB (up to 500 users)",
       totalMobile: "✓ Good",
-      d365: "✓ **Enterprise-grade** (unlimited)",
+      d365: "✓ Enterprise-grade (unlimited)",
       uptickScore: "7/10",
       tmScore: "7/10",
       d365Score: "10/10",
@@ -455,7 +465,7 @@ const FSMComparison = () => {
       feature: "Multi-entity/subsidiary support",
       uptick: "~ Basic",
       totalMobile: "✓ Available",
-      d365: "✓ **Excellent** - business units",
+      d365: "✓ Excellent - business units",
       uptickScore: "5/10",
       tmScore: "7/10",
       d365Score: "10/10",
@@ -463,9 +473,9 @@ const FSMComparison = () => {
     {
       category: "Implementation",
       feature: "Typical implementation time",
-      uptick: "**2 months** (fast)",
+      uptick: "2 months (fast)",
       totalMobile: "3-4 months",
-      d365: "**3-6 months**",
+      d365: "3-6 months",
       uptickScore: "10/10",
       tmScore: "7/10",
       d365Score: "6/10",
@@ -473,9 +483,9 @@ const FSMComparison = () => {
     {
       category: "Implementation",
       feature: "Out-of-box functionality %",
-      uptick: "**95%** (fire safety specific)",
+      uptick: "95% (fire safety specific)",
       totalMobile: "80% (generic FSM)",
-      d365: "**90%** (field service)",
+      d365: "90% (field service)",
       uptickScore: "10/10",
       tmScore: "8/10",
       d365Score: "9/10",
@@ -490,76 +500,6 @@ const FSMComparison = () => {
       tmScore: "6/10",
       d365Score: "6/10",
     },
-    // {
-    //   category: "Cost",
-    //   feature: "Licensing model",
-    //   uptick: "Per user/month (field + desk)",
-    //   totalMobile: "Per user/month",
-    //   d365: "Per user/month",
-    //   uptickScore: "8/10",
-    //   tmScore: "7/10",
-    //   d365Score: "7/10",
-    // },
-    // {
-    //   category: "Cost",
-    //   feature: "Estimated cost per user/month",
-    //   uptick: "~£45-65/user",
-    //   totalMobile: "~£75-95/user",
-    //   d365: "£105/user (D365 FSM) + £105 (Project Ops if needed)",
-    //   uptickScore: "9/10",
-    //   tmScore: "7/10",
-    //   d365Score: "5/10",
-    // },
-    // {
-    //   category: "Cost",
-    //   feature: "Annual cost (130 users - FSM only)",
-    //   uptick: "~£70k-101k/year",
-    //   totalMobile: "~£117k-148k/year",
-    //   d365: "~£164k/year (FSM only)",
-    //   uptickScore: "9/10",
-    //   tmScore: "7/10",
-    //   d365Score: "5/10",
-    // },
-    // {
-    //   category: "Cost",
-    //   feature: "Annual cost (130 users - FSM + Project Ops)",
-    //   uptick: "Not applicable (no project module)",
-    //   totalMobile: "~£140k-170k/year (estimated)",
-    //   d365: "~£327k/year (FSM + Project Ops)",
-    //   uptickScore: "N/A",
-    //   tmScore: "6/10",
-    //   d365Score: "4/10",
-    // },
-    // {
-    //   category: "Cost",
-    //   feature: "Implementation cost (one-time)",
-    //   uptick: "~£30-50k",
-    //   totalMobile: "~£60-100k",
-    //   d365: "~£100-180k",
-    //   uptickScore: "9/10",
-    //   tmScore: "7/10",
-    //   d365Score: "5/10",
-    // },
-    // {
-    //   category: "Cost",
-    //   feature: "5-Year Total Cost of Ownership (FSM only)",
-    //   uptick: "~£380-555k",
-    //   totalMobile: "~£645-840k",
-    //   d365: "~£920k-1.0M",
-    //   uptickScore: "9/10",
-    //   tmScore: "7/10",
-    //   d365Score: "5/10",
-    // },
-    // {
-    //   category: "Cost",
-    //   feature: "5-Year TCO (FSM + Project Ops)",
-    //   uptick: "N/A",
-    //   totalMobile: "~£760k-950k",
-    //   d365: "~£1.73M (FSM + Project Ops)",
-    //   uptickScore: "N/A",
-    //   tmScore: "6/10",
-    //   d365Score: "3/10",
-    // },
   ];
 
   const ventroScorecard = [
@@ -584,14 +524,14 @@ const FSMComparison = () => {
       d365Weighted: "2.0",
     },
     {
-      criteria: "Offline Mobile Capability",
+      criteria: "Asset Management & Maintenance Tracking",
       weight: "15%",
-      uptick: "10/10",
+      uptick: "9/10",
       totalMobile: "7/10",
-      d365: "5/10",
-      uptickWeighted: "1.5",
+      d365: "9/10",
+      uptickWeighted: "1.35",
       tmWeighted: "1.05",
-      d365Weighted: "0.75",
+      d365Weighted: "1.35",
     },
     {
       criteria: "AI-Powered Scheduling & Optimization",
@@ -659,9 +599,9 @@ const FSMComparison = () => {
       uptick: "",
       totalMobile: "",
       d365: "",
-      uptickWeighted: "6.6",
+      uptickWeighted: "6.45",
       tmWeighted: "5.05",
-      d365Weighted: "7.4",
+      d365Weighted: "7.55",
     },
   ];
 
@@ -691,14 +631,12 @@ const FSMComparison = () => {
       "D365 FSM scores highest overall (7.4/10) due to enterprise capabilities and NetSuite integration",
       "Total Mobile (5.05/10) doesn't differentiate enough to justify over specialized (Uptick) or enterprise (D365) options",
       "Phased approach leverages Uptick's speed + D365's power while mitigating both platforms' weaknesses",
-    ],
+    ]
   };
 
   const downloadCSV = () => {
-    // Create CSV content with proper escaping
     const rows = [];
 
-    // Feature Comparison Section
     rows.push(["FEATURE COMPARISON - UPTICK VS TOTAL MOBILE VS D365 FSM"]);
     rows.push([]);
     rows.push([
@@ -725,11 +663,9 @@ const FSMComparison = () => {
       ]);
     });
 
-    // Add spacing
     rows.push([]);
     rows.push([]);
 
-    // Weighted Scorecard Section
     rows.push(["VENTRO WEIGHTED SCORECARD"]);
     rows.push([]);
     rows.push([
@@ -756,13 +692,11 @@ const FSMComparison = () => {
       ]);
     });
 
-    // Convert to CSV string
     const csvContent = rows
       .map((row) =>
         row
           .map((cell) => {
             const cellStr = String(cell || "");
-            // Escape quotes and wrap in quotes if contains comma, quote, or newline
             if (
               cellStr.includes(",") ||
               cellStr.includes('"') ||
@@ -776,7 +710,6 @@ const FSMComparison = () => {
       )
       .join("\n");
 
-    // Create blob and download
     const blob = new Blob([csvContent], { type: "text/csv;charset=utf-8;" });
     const link = document.createElement("a");
     const url = URL.createObjectURL(blob);
@@ -792,7 +725,6 @@ const FSMComparison = () => {
     link.click();
     document.body.removeChild(link);
 
-    // Clean up
     URL.revokeObjectURL(url);
   };
 
@@ -852,7 +784,6 @@ const FSMComparison = () => {
   return (
     <div className="w-full h-screen overflow-auto bg-gray-100 p-6">
       <div className="max-w-7xl mx-auto">
-        {/* Header */}
         <div className="bg-white rounded-lg shadow-lg p-6 mb-6">
           <div className="flex justify-between items-center">
             <div>
@@ -876,7 +807,6 @@ const FSMComparison = () => {
           </div>
         </div>
 
-        {/* Tabs */}
         <div className="bg-white rounded-lg shadow-lg mb-6">
           <div className="flex border-b">
             <button
@@ -911,7 +841,6 @@ const FSMComparison = () => {
             </button>
           </div>
 
-          {/* Tab Content */}
           <div className="p-6">
             {activeTab === "overview" && (
               <div>
@@ -925,7 +854,6 @@ const FSMComparison = () => {
                   </p>
                 </div>
 
-                {/* Header Row */}
                 <div className="grid grid-cols-12 bg-gray-800 text-white font-bold text-sm sticky top-0">
                   <div className="col-span-3 p-3 border-r border-gray-700">
                     Feature
@@ -942,7 +870,6 @@ const FSMComparison = () => {
                   <div className="col-span-3 p-3">Winner</div>
                 </div>
 
-                {/* Content by Category */}
                 {categories.map((category, idx) => (
                   <CategorySection
                     key={idx}
@@ -1031,49 +958,65 @@ const FSMComparison = () => {
                   </table>
                 </div>
 
-                {/* Visual Score Comparison */}
                 <div className="mt-8 grid grid-cols-3 gap-4">
-                  <div className="bg-orange-50 border-2 border-orange-500 rounded-lg p-6 text-center">
+                  {/* <div className="bg-orange-50 border-2 border-orange-500 rounded-lg p-6 text-center">
                     <div className="text-orange-700 font-bold text-sm mb-2">
                       UPTICK
                     </div>
                     <div className="text-4xl font-bold text-orange-600">
-                      6.6
+                      6.45
                     </div>
                     <div className="text-sm text-gray-600 mt-2">out of 10</div>
                     <div className="mt-4 text-xs text-gray-700">
                       <div className="font-bold mb-1">Strengths:</div>
                       <div>• Fire compliance</div>
-                      <div>• Offline mobile</div>
+                      <div>• Asset tracking</div>
                       <div>• Fast deployment</div>
                     </div>
-                  </div>
+                  </div> */}
 
-                  <div className="bg-blue-50 border-2 border-blue-500 rounded-lg p-6 text-center">
-                    <div className="text-blue-700 font-bold text-sm mb-2">
+
+                  <div className="bg-orange-50 border-2 border-orange-500 rounded-lg p-6 text-center">
+                    <div className="text-orange-700 font-bold text-sm mb-2">
                       TOTAL MOBILE
                     </div>
-                    <div className="text-4xl font-bold text-blue-600">5.05</div>
+                    <div className="text-4xl font-bold text-orange-600">
+                      5.05
+                    </div>
                     <div className="text-sm text-gray-600 mt-2">out of 10</div>
                     <div className="mt-4 text-xs text-gray-700">
-                      <div className="font-bold mb-1">Position:</div>
+                      <div className="font-bold mb-1">Strengths:</div>
                       <div>• Middle ground</div>
                       <div>• No clear differentiator</div>
                       <div>• Not recommended</div>
                     </div>
                   </div>
 
-                  <div className="bg-green-50 border-2 border-green-500 rounded-lg p-6 text-center">
-                    <div className="text-green-700 font-bold text-sm mb-2">
+                  <div className="bg-blue-50 border-2 border-blue-500 rounded-lg p-6 text-center">
+                    <div className="text-blue-700 font-bold text-sm mb-2">
                       D365 FSM
                     </div>
-                    <div className="text-4xl font-bold text-green-600">7.4</div>
+                    <div className="text-4xl font-bold text-blue-600">7.55</div>
                     <div className="text-sm text-gray-600 mt-2">out of 10</div>
                     <div className="mt-4 text-xs text-gray-700">
-                      <div className="font-bold mb-1">Strengths:</div>
+                      <div className="font-bold mb-1">Position:</div>
                       <div>• NetSuite integration</div>
                       <div>• AI scheduling</div>
                       <div>• Enterprise scale</div>
+                    </div>
+                  </div>
+
+                  <div className="bg-green-50 border-2 border-green-500 rounded-lg p-6 text-center">
+                    <div className="text-green-700 font-bold text-sm mb-2">
+                      UPTICK
+                    </div>
+                    <div className="text-4xl font-bold text-green-600">6.45</div>
+                    <div className="text-sm text-gray-600 mt-2">out of 10</div>
+                    <div className="mt-4 text-xs text-gray-700">
+                      <div className="font-bold mb-1">Strengths:</div>
+                      <div>• Fire compliance</div>
+                      <div>• Asset tracking</div>
+                      <div>• Fast deployment</div>
                     </div>
                   </div>
                 </div>
@@ -1084,16 +1027,13 @@ const FSMComparison = () => {
                   </div>
                   <ul className="text-sm text-yellow-900 space-y-1">
                     <li>
-                      <strong>D365 FSM (7.4):</strong> Highest overall score -
-                      best long-term enterprise platform
+                      <strong>D365 FSM (7.55):</strong> Highest overall score - best long-term enterprise platform with superior integration
                     </li>
                     <li>
-                      <strong>Uptick (6.6):</strong> Strong for immediate needs
-                      - fire compliance & speed to deploy
+                      <strong>Uptick (6.45):</strong> Strong for immediate needs - fire compliance excellence & rapid deployment
                     </li>
                     <li>
-                      <strong>Total Mobile (5.05):</strong> Falls between
-                      specialized and enterprise without excelling at either
+                      <strong>Total Mobile (5.05):</strong> Falls between specialized and enterprise without excelling at either
                     </li>
                   </ul>
                 </div>
@@ -1111,7 +1051,6 @@ const FSMComparison = () => {
                   </p>
                 </div>
 
-                {/* Scenario Analysis */}
                 <div className="space-y-4 mb-8">
                   {recommendations.immediate.map((rec, idx) => (
                     <div
@@ -1145,7 +1084,6 @@ const FSMComparison = () => {
                   ))}
                 </div>
 
-                {/* Key Insights */}
                 <div className="bg-blue-50 border-2 border-blue-500 rounded-lg p-6">
                   <h3 className="text-lg font-bold text-blue-900 mb-4">
                     💡 Key Insights from Analysis
@@ -1159,94 +1097,11 @@ const FSMComparison = () => {
                     ))}
                   </ul>
                 </div>
-
-                {/* Implementation Timeline Visual */}
-                {/* <div className="mt-8 bg-white border-2 rounded-lg p-6">
-                  <h3 className="text-lg font-bold text-gray-800 mb-4">
-                    Recommended Approach: Phased Migration
-                  </h3>
-
-                  <div className="space-y-4">
-                    <div className="flex items-center gap-4">
-                      <div className="w-24 text-sm font-bold text-gray-600">
-                        Month 1
-                      </div>
-                      <div className="flex-1 bg-gray-200 rounded p-3 text-sm">
-                        📋 Discovery & Assessment
-                      </div>
-                    </div>
-
-                    <div className="flex items-center gap-4">
-                      <div className="w-24 text-sm font-bold text-gray-600">
-                        Months 2-4
-                      </div>
-                      <div className="flex-1 bg-orange-200 rounded p-3 text-sm font-bold">
-                        🔶 UPTICK INTERIM - Consolidate 4 FSM tools
-                        <div className="text-xs font-normal mt-1">
-                          ✓ Immediate relief • Fire compliance • SimPro absorbed
-                        </div>
-                      </div>
-                    </div>
-
-                    <div className="flex items-center gap-4">
-                      <div className="w-24 text-sm font-bold text-gray-600">
-                        Months 5-7
-                      </div>
-                      <div className="flex-1 bg-green-200 rounded p-3 text-sm font-bold">
-                        ⚙️ D365 FSM BUILD - Configure & integrate
-                        <div className="text-xs font-normal mt-1">
-                          ✓ Parallel to Uptick ops • Celigo setup • Testing
-                        </div>
-                      </div>
-                    </div>
-
-                    <div className="flex items-center gap-4">
-                      <div className="w-24 text-sm font-bold text-gray-600">
-                        Months 8-10
-                      </div>
-                      <div className="flex-1 bg-green-300 rounded p-3 text-sm font-bold">
-                        🚀 D365 FSM MIGRATION - Final cutover
-                        <div className="text-xs font-normal mt-1">
-                          ✓ Single source migration • Uptick sunset • Go-live
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div className="mt-6 bg-yellow-50 border border-yellow-300 rounded p-4">
-                    <div className="font-bold text-yellow-900 mb-2">
-                      Why This Works:
-                    </div>
-                    <div className="grid grid-cols-2 gap-4 text-sm">
-                      <div>
-                        <div className="font-semibold text-yellow-800">
-                          Immediate Value (Month 4):
-                        </div>
-                        <ul className="text-yellow-900 ml-4 mt-1 space-y-1">
-                          <li>• 200+ engineers on unified platform</li>
-                          <li>• Fire compliance from day 1</li>
-                          <li>• SimPro absorbed seamlessly</li>
-                        </ul>
-                      </div>
-                      <div>
-                        <div className="font-semibold text-yellow-800">
-                          Long-term Platform (Month 10):
-                        </div>
-                        <ul className="text-yellow-900 ml-4 mt-1 space-y-1">
-                          <li>• Enterprise-grade D365 FSM</li>
-                          <li>• NetSuite integration via Celigo</li>
-                          <li>• Foundation for 50+ acquisitions</li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-                </div> */}
               </div>
             )}
           </div>
         </div>
 
-        {/* Footer */}
         <div className="bg-white rounded-lg shadow-lg p-4 text-center text-sm text-gray-600">
           <p>
             Prepared for Ventro Group Digital Transformation |{" "}
@@ -1258,4 +1113,4 @@ const FSMComparison = () => {
   );
 };
 
-export default FSMComparison;
+export default FSMComparison
