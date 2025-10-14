@@ -1,3 +1,5 @@
+/* eslint-disable */
+
 "use client";
 
 import React, { useState } from "react";
@@ -137,16 +139,6 @@ const FSMComparison = () => {
       uptickScore: "4/10",
       tmScore: "7/10",
       d365Score: "9/10",
-    },
-    {
-      category: "Mobile App",
-      feature: "**OFFLINE CAPABILITY**",
-      uptick: "✓ **EXCELLENT** - full offline",
-      totalMobile: "✓ Good offline",
-      d365: "~ **LIMITED** - requires connectivity",
-      uptickScore: "10/10",
-      tmScore: "7/10",
-      d365Score: "5/10",
     },
     {
       category: "Mobile App",
@@ -498,76 +490,76 @@ const FSMComparison = () => {
       tmScore: "6/10",
       d365Score: "6/10",
     },
-    {
-      category: "Cost",
-      feature: "Licensing model",
-      uptick: "Per user/month (field + desk)",
-      totalMobile: "Per user/month",
-      d365: "Per user/month",
-      uptickScore: "8/10",
-      tmScore: "7/10",
-      d365Score: "7/10",
-    },
-    {
-      category: "Cost",
-      feature: "Estimated cost per user/month",
-      uptick: "~£45-65/user",
-      totalMobile: "~£75-95/user",
-      d365: "£105/user (D365 FSM) + £105 (Project Ops if needed)",
-      uptickScore: "9/10",
-      tmScore: "7/10",
-      d365Score: "5/10",
-    },
-    {
-      category: "Cost",
-      feature: "Annual cost (130 users - FSM only)",
-      uptick: "~£70k-101k/year",
-      totalMobile: "~£117k-148k/year",
-      d365: "~£164k/year (FSM only)",
-      uptickScore: "9/10",
-      tmScore: "7/10",
-      d365Score: "5/10",
-    },
-    {
-      category: "Cost",
-      feature: "Annual cost (130 users - FSM + Project Ops)",
-      uptick: "Not applicable (no project module)",
-      totalMobile: "~£140k-170k/year (estimated)",
-      d365: "~£327k/year (FSM + Project Ops)",
-      uptickScore: "N/A",
-      tmScore: "6/10",
-      d365Score: "4/10",
-    },
-    {
-      category: "Cost",
-      feature: "Implementation cost (one-time)",
-      uptick: "~£30-50k",
-      totalMobile: "~£60-100k",
-      d365: "~£100-180k",
-      uptickScore: "9/10",
-      tmScore: "7/10",
-      d365Score: "5/10",
-    },
-    {
-      category: "Cost",
-      feature: "5-Year Total Cost of Ownership (FSM only)",
-      uptick: "~£380-555k",
-      totalMobile: "~£645-840k",
-      d365: "~£920k-1.0M",
-      uptickScore: "9/10",
-      tmScore: "7/10",
-      d365Score: "5/10",
-    },
-    {
-      category: "Cost",
-      feature: "5-Year TCO (FSM + Project Ops)",
-      uptick: "N/A",
-      totalMobile: "~£760k-950k",
-      d365: "~£1.73M (FSM + Project Ops)",
-      uptickScore: "N/A",
-      tmScore: "6/10",
-      d365Score: "3/10",
-    },
+    // {
+    //   category: "Cost",
+    //   feature: "Licensing model",
+    //   uptick: "Per user/month (field + desk)",
+    //   totalMobile: "Per user/month",
+    //   d365: "Per user/month",
+    //   uptickScore: "8/10",
+    //   tmScore: "7/10",
+    //   d365Score: "7/10",
+    // },
+    // {
+    //   category: "Cost",
+    //   feature: "Estimated cost per user/month",
+    //   uptick: "~£45-65/user",
+    //   totalMobile: "~£75-95/user",
+    //   d365: "£105/user (D365 FSM) + £105 (Project Ops if needed)",
+    //   uptickScore: "9/10",
+    //   tmScore: "7/10",
+    //   d365Score: "5/10",
+    // },
+    // {
+    //   category: "Cost",
+    //   feature: "Annual cost (130 users - FSM only)",
+    //   uptick: "~£70k-101k/year",
+    //   totalMobile: "~£117k-148k/year",
+    //   d365: "~£164k/year (FSM only)",
+    //   uptickScore: "9/10",
+    //   tmScore: "7/10",
+    //   d365Score: "5/10",
+    // },
+    // {
+    //   category: "Cost",
+    //   feature: "Annual cost (130 users - FSM + Project Ops)",
+    //   uptick: "Not applicable (no project module)",
+    //   totalMobile: "~£140k-170k/year (estimated)",
+    //   d365: "~£327k/year (FSM + Project Ops)",
+    //   uptickScore: "N/A",
+    //   tmScore: "6/10",
+    //   d365Score: "4/10",
+    // },
+    // {
+    //   category: "Cost",
+    //   feature: "Implementation cost (one-time)",
+    //   uptick: "~£30-50k",
+    //   totalMobile: "~£60-100k",
+    //   d365: "~£100-180k",
+    //   uptickScore: "9/10",
+    //   tmScore: "7/10",
+    //   d365Score: "5/10",
+    // },
+    // {
+    //   category: "Cost",
+    //   feature: "5-Year Total Cost of Ownership (FSM only)",
+    //   uptick: "~£380-555k",
+    //   totalMobile: "~£645-840k",
+    //   d365: "~£920k-1.0M",
+    //   uptickScore: "9/10",
+    //   tmScore: "7/10",
+    //   d365Score: "5/10",
+    // },
+    // {
+    //   category: "Cost",
+    //   feature: "5-Year TCO (FSM + Project Ops)",
+    //   uptick: "N/A",
+    //   totalMobile: "~£760k-950k",
+    //   d365: "~£1.73M (FSM + Project Ops)",
+    //   uptickScore: "N/A",
+    //   tmScore: "6/10",
+    //   d365Score: "3/10",
+    // },
   ];
 
   const ventroScorecard = [
@@ -676,30 +668,29 @@ const FSMComparison = () => {
   const recommendations = {
     immediate: [
       {
-        scenario: "Scenario 1: Direct to D365 (6 months)",
-        recommendation: "Not Recommended",
+        scenario: "Scenario 1: Direct to D365 (7-8 months)",
+        recommendation: "Long Term Goal",
         reasoning:
-          "Loses fire safety compliance (Uptick) without gaining enough immediate value. D365 requires 3-4 months configuration for UK fire standards.",
+          "Direct migration delivering D365 FSM in ~7 months. Requires configuration of fire safety specific workflows and compliance forms, leveraging D365's flexible platform capabilities.",
       },
       {
-        scenario: "Scenario 2: Uptick Interim → D365 (10 months)",
+        scenario: "Scenario 2: Uptick Interim → D365 (10-11 months)",
         recommendation: "RECOMMENDED",
         reasoning:
-          "Best of both worlds - immediate fire compliance + long-term enterprise platform. Uptick (Month 1-4) provides relief, D365 (Month 8-10) provides scale.",
+          "Best of both worlds - immediate fire compliance + long-term enterprise platform. Uptick (Month 1-4) provides relief, D365 (Month 10-11) provides scale.",
       },
       {
         scenario: "Total Mobile Option",
         recommendation: "Not Competitive",
         reasoning:
-          "Doesn&apos;t excel at fire compliance (vs Uptick) or enterprise integration (vs D365). No compelling reason to choose.",
+          "Capable FSM platform with balanced features. However, for Ventro's specific needs - fire safety compliance and enterprise integration, Uptick and D365 offer more targeted strengths.",
       },
     ],
     keyInsights: [
+      "Interim: Uptick excels at fire compliance (10/10) and speed (~3 months), making it ideal for interim relief",
       "D365 FSM scores highest overall (7.4/10) due to enterprise capabilities and NetSuite integration",
-      "Uptick excels at fire compliance (10/10) and speed (2 months), making it ideal for interim relief",
-      "Total Mobile (5.05/10) doesn&apos;t differentiate enough to justify over specialized (Uptick) or enterprise (D365) options",
-      "Critical gap: D365 FSM weak on offline capability (5/10) vs Uptick (10/10) - important for basement/remote fire inspections",
-      "Phased approach leverages Uptick&apos;s speed + D365&apos;s power while mitigating both platforms&apos; weaknesses",
+      "Total Mobile (5.05/10) doesn't differentiate enough to justify over specialized (Uptick) or enterprise (D365) options",
+      "Phased approach leverages Uptick's speed + D365's power while mitigating both platforms' weaknesses",
     ],
   };
 
@@ -971,7 +962,7 @@ const FSMComparison = () => {
                     Ventro-Specific Weighted Scorecard
                   </h2>
                   <p className="text-gray-600 text-sm mb-4">
-                    Scores weighted by Ventro&apos;s strategic priorities and
+                    Scores weighted by Ventro's strategic priorities and
                     business requirements
                   </p>
                 </div>
@@ -1052,9 +1043,9 @@ const FSMComparison = () => {
                     <div className="text-sm text-gray-600 mt-2">out of 10</div>
                     <div className="mt-4 text-xs text-gray-700">
                       <div className="font-bold mb-1">Strengths:</div>
-                      <div>• Fire compliance (10/10)</div>
-                      <div>• Offline mobile (10/10)</div>
-                      <div>• Fast deployment (10/10)</div>
+                      <div>• Fire compliance</div>
+                      <div>• Offline mobile</div>
+                      <div>• Fast deployment</div>
                     </div>
                   </div>
 
@@ -1170,7 +1161,7 @@ const FSMComparison = () => {
                 </div>
 
                 {/* Implementation Timeline Visual */}
-                <div className="mt-8 bg-white border-2 rounded-lg p-6">
+                {/* <div className="mt-8 bg-white border-2 rounded-lg p-6">
                   <h3 className="text-lg font-bold text-gray-800 mb-4">
                     Recommended Approach: Phased Migration
                   </h3>
@@ -1249,7 +1240,7 @@ const FSMComparison = () => {
                       </div>
                     </div>
                   </div>
-                </div>
+                </div> */}
               </div>
             )}
           </div>
