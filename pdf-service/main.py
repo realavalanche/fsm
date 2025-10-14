@@ -15,7 +15,8 @@ app.add_middleware(
     allow_origins=[
         "http://localhost:3000", 
         "https://realavalanche.github.io",
-        "http://localhost:3001"  # In case you're running dev server on different port
+        "http://localhost:3001",
+        "https://ventro-fsm-demo.onrender.com"
     ],
     allow_credentials=True,
     allow_methods=["*"],
@@ -566,3 +567,31 @@ if __name__ == "__main__":
     print("Service will be available at: http://localhost:8000")
     print("API docs available at: http://localhost:8000/docs")
     uvicorn.run(app, host="0.0.0.0", port=8000, reload=False)
+
+    from fastapi.staticfiles import StaticFiles
+from fastapi.responses import FileResponse
+import os
+
+
+# Serve Next.js static files
+# Mount the Next.js output directory
+static_dir = os.path.join(os.path.dirname(__file__), "..", "out")
+
+if os.path.exists(static_dir):
+    app.mount("/static", StaticFiles(directory=static_dir), name="static")
+    
+    # Serve index.html for root and other routes
+    @app.get("/{full_path:path}")
+    async def serve_frontend(full_path: str):
+        # API routes take precedence
+        if full_path.startswith("generate-pdf") or full_path.startswith("health"):
+            raise HTTPException(404)
+        
+        file_path = os.path.join(static_dir, full_path)
+        
+        # If it's a file, serve it
+        if os.path.isfile(file_path):
+            return FileResponse(file_path)
+        
+        # Otherwise serve index.html (for Next.js routing)
+        return FileResponse(os.path.join(static_dir, "index.html"))

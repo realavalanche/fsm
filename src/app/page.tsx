@@ -733,8 +733,12 @@ const FSMComparison = () => {
     if (isDownloadingPDF) return; // Prevent multiple downloads
     
     setIsDownloadingPDF(true);
+    
+    // Use environment variable for PDF service URL, fallback to production URL
+    const pdfServiceUrl = process.env.NEXT_PUBLIC_PDF_SERVICE_URL || 'https://fsm-u55x.onrender.com';
+    
     try {
-      const response = await fetch('http://localhost:8000/generate-pdf', {
+      const response = await fetch(`${pdfServiceUrl}/generate-pdf`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -757,11 +761,11 @@ const FSMComparison = () => {
         window.URL.revokeObjectURL(url);
       } else {
         console.error('Failed to generate PDF:', response.statusText);
-        alert('Failed to generate PDF. Please make sure the PDF service is running at http://localhost:8000');
+        alert(`Failed to generate PDF. Please make sure the PDF service is running at ${pdfServiceUrl}`);
       }
     } catch (error) {
       console.error('Error generating PDF:', error);
-      alert('Error connecting to PDF service. Please make sure it is running at http://localhost:8000');
+      alert(`Error connecting to PDF service. Please make sure it is running at ${pdfServiceUrl}`);
     } finally {
       setIsDownloadingPDF(false);
     }
