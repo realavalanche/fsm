@@ -1071,9 +1071,9 @@ const FSMComparison = () => {
                     <div className="text-sm text-gray-600 mt-2">out of 10</div>
                     <div className="mt-4 text-xs text-gray-700">
                       <div className="font-bold mb-1">Strengths:</div>
-                      <div>• NetSuite integration (10/10)</div>
-                      <div>• AI scheduling (10/10)</div>
-                      <div>• Enterprise scale (10/10)</div>
+                      <div>• NetSuite integration</div>
+                      <div>• AI scheduling</div>
+                      <div>• Enterprise scale</div>
                     </div>
                   </div>
                 </div>
