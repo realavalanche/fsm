@@ -734,8 +734,13 @@ const FSMComparison = () => {
     
     setIsDownloadingPDF(true);
     
-    // Use environment variable for PDF service URL, fallback to production URL
-    const pdfServiceUrl = process.env.NEXT_PUBLIC_PDF_SERVICE_URL || 'https://fsm-u55x.onrender.com';
+    // Dynamically determine PDF service URL based on environment
+    const isLocalhost = typeof window !== 'undefined' && 
+      (window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1');
+    
+    const pdfServiceUrl = isLocalhost 
+      ? 'http://localhost:8000' 
+      : 'https://fsm-u55x.onrender.com';
     
     try {
       const response = await fetch(`${pdfServiceUrl}/generate-pdf`, {
