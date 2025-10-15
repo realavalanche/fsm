@@ -1,0 +1,29 @@
+name: Keep Render Service Alive
+
+on:
+  schedule:
+    # Ping the service every 10 minutes
+    - cron: '*/10 * * * *'
+  workflow_dispatch: # Allow manual trigger
+
+jobs:
+  ping-service:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Ping PDF Service Health Endpoint
+      run: |
+        echo "Pinging PDF service health endpoint..."
+        response=$(curl -s -o /dev/null -w "%{http_code}" https://fsm-u55x.onrender.com/health)
+        echo "Health check response code: $response"
+        
+        if [ $response -eq 200 ]; then
+          echo "✅ Service is healthy"
+        else
+          echo "❌ Service returned status code: $response"
+          exit 1
+        fi
+    
+    - name: Log timestamp
+      run: |
+        echo "Keep-alive ping completed at: $(date -u)"
